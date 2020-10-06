@@ -31,7 +31,7 @@ jobs:
           path: tools
           key: ${{ runner.os }}-tools-${{ hashFiles('recipe.cake') }}
       - name: Build Addin
-        uses: cake-build/cake-action@v1
+        uses: cake-build/cake-action@v1.1.1
         with:
           script-path: recipe.cake
           target: CI

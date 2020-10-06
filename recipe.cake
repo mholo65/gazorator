@@ -13,7 +13,9 @@ BuildParameters.SetParameters(context: Context,
                             shouldRunDupFinder: false,
                             shouldRunInspectCode: false,
                             shouldRunDotNetCorePack: true,
-                            shouldUseDeterministicBuilds: true);
+                            shouldUseDeterministicBuilds: true,
+                            preferredBuildAgentOperatingSystem: PlatformFamily.Windows,
+                            preferredBuildProviderType: BuildProviderType.GitHubActions);
 
 BuildParameters.PrintParameters(Context);
 
